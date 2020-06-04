@@ -1,0 +1,370 @@
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+body { 
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+.texto-naranja {
+    font-weight: 300;
+    color: orange;
+}
+.texto-blanco {
+    font-weight: 700;
+    color: #fff;
+}
+.texto-negro {
+	color: #000;
+}
+.texto-azul-oscuro{
+    font-weight: 700;
+    color: #003E65;
+}
+
+/*--------------------------
+    Clases de FullPage.js
+--------------------------*/
+
+#fp-nav ul li a span{
+    background: #003E65;
+}
+#fp-nav ul li .fp-tooltip{
+    color: #003E65;
+    font-weight: 500;
+}
+
+/*--------------------------
+    Menu de Navegación
+--------------------------*/
+.nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 20;
+    height: 100%;
+    margin: 0;
+    padding: 10px 0;
+    /*background-color: #E4E4E4;*/
+}
+.nav li,
+.nav a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #5A5A5A;
+    transition: all 0.5s ease;
+    padding: 0.7rem 1rem 0.7rem 1.5rem;
+    margin-right: 1rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.nav li.active{
+    background-color: #000;
+    margin-right: 0;
+    background-color: #3BB2E4;
+}
+.menu li a{
+    transition: all 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+.menu li.active a,
+.menu li:hover a{
+    color: #00101B;
+}
+
+
+/*--------------------------
+    Estilos comunes
+--------------------------*/
+
+.header,
+.quienesSomos,
+.plataformaEstrategica,
+.plataformaEstrategica,
+.acreditacion,
+.mapaGeografico,
+.uss,
+.ruralidad,
+.programasEspeciales{
+    background-position: center  !important;
+    background-repeat: no-repeat  !important;
+    background-size: contain  !important;    
+}
+
+/*--------------------------
+    Header
+--------------------------*/
+.header{
+    background: url('../media/portafolio-imagen1.png');
+}
+.header .contenedor-icono{
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: bajar-subir 1s ease infinite;
+}
+/*--------------------------
+    Quienes Somos
+--------------------------*/
+.quienesSomos{
+    background: url('../media/portafolio-imagen2.png');
+}
+/*--------------------------
+    Plataforma Estratégica
+--------------------------*/
+.plataformaEstrategica{
+    background: url('../media/portafolio-imagen3.png');
+}
+/*--------------------------
+    Acreditación
+--------------------------*/
+.acreditacion{
+    background: url('../media/portafolio-imagen4.png');
+}
+/*--------------------------
+    Mapa Geográfico
+--------------------------*/
+.mapaGeografico{
+    background: url('../media/portafolio-imagen5.png');
+}
+/*--------------------------
+    UMHES
+--------------------------*/
+.umhes article{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
+.umhes article:nth-child(1){
+    background-image: url('../media/portafolio-imagen6.png');
+}
+.umhes article:nth-child(2){
+    background-image: url('../media/portafolio-imagen7.png');
+}
+/*--------------------------
+    CAPS
+--------------------------*/
+.caps article{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
+.caps article:nth-child(1){
+    background-image: url('../media/portafolio-imagen8.png');
+}
+.caps article:nth-child(2){
+    background-image: url('../media/portafolio-imagen9.png');
+}
+/*--------------------------
+    USS
+--------------------------*/
+.uss{
+    background: url('../media/portafolio-imagen10.png');
+}
+/*--------------------------
+    Ruralidad
+--------------------------*/
+.ruralidad{
+    background: url('../media/portafolio-imagen11.png');
+}
+/*--------------------------
+    Programas Especiales
+--------------------------*/
+.programasEspeciales{
+    background: url('../media/portafolio-imagen12.png');
+}
+/*--------------------------
+    Gestión del Riesgo
+--------------------------*/
+.gestionRiesgo article{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
+.gestionRiesgo article:nth-child(1){
+    background-image: url('../media/portafolio-imagen13.png');
+}
+.gestionRiesgo article:nth-child(2){
+    background-image: url('../media/portafolio-imagen14.png');
+}
+/*--------------------------
+    Footer
+--------------------------*/
+.footer{
+    background: url('../media/portafolio-imagen15.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*--------------------------
+    Redes Sociales
+--------------------------*/
+.socialMedia{
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0.3rem;
+    z-index: 21;
+}
+.socialMedia li{
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+    margin: 0;
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+}
+.socialMedia li:hover{
+    padding-bottom: 1.3rem;
+}
+.socialMedia li a i{
+    color: #FFF;
+}
+.facebook { background: #3B5998; }
+.twitter { background: #1DA1F2; }
+.instagram { background: #C13584; }
+.youtube { background: #C4302B; }
+
+/*--------------------------
+    Clases FullPage Flechas del Slide
+--------------------------*/
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev{
+    top: 98%;
+}
+.fp-controlArrow.fp-prev{
+    left: 85%;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent #3BB2E4 transparent transparent;
+}
+.fp-controlArrow.fp-next{
+    right: 70px;
+    border-width: 15px 0px 15px 15px;
+    border-color: transparent transparent transparent #3BB2E4;
+}
+
+/*--------------------------
+    Animaciones
+--------------------------*/
+
+@keyframes bajar-subir{
+    0% { transform: translateY(20px); }
+    25% { transform: translateY(0); }
+    100% { transform: translateY(20px); }
+}
+@keyframes izquierda-derecha{
+    0% { transform: translateX(-100%); }
+    100% {transform: translateX(0);}
+}
+@keyframes derecha-izquierda{
+    0% { transform: translateX(100%); }
+    100% {transform: translateX(0);}
+}
+
+/*--------------------------
+    Mediaqueries
+--------------------------*/
+
+@media screen and (max-width: 768px){
+    .menu li a,
+    .menu li.active a{
+        font-size: 18px;
+    }
+    .modelo{
+        font-size: 40px;
+    }
+    .precio{
+        font-size: 23px;
+    }
+    .footer h2{
+        font-size: 15px;
+    }
+    .footer .redes-sociales{
+        font-size: 30px;
+    }
+    .footer .redes-sociales a{
+        width: 70px;
+        height: 70px;
+        margin: 0 15px;
+    }
+    .footer .texto-naranja{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .header .titulo{
+        font-size: 60px;
+    }
+    .informacion-producto{
+        position: absolute;
+        top: 70%;
+    }
+    .fp-controlArrow.fp-next{
+        left: 100px;
+    }
+    .fp-controlArrow.fp-prev{
+        left: 25px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .nav{
+        display: block;
+        text-align: center;
+    }
+    .nav a{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu li a,
+    .menu li.active a{
+        font-size: 15px;
+        padding: 5px;
+    }
+    .titulo{
+        font-size: 40px;
+    }
+    .quienesSomos .modelo{
+        font-size: 30px;
+    }    
+    .quienesSomos .descripcion,
+    .quienesSomos .precio{
+        font-size: 17px;
+    }
+    .footer .redes-sociales{
+        font-size: 25px;
+    }
+    .footer .redes-sociales a{
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+    }
+    .footer .texto-naranja{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
